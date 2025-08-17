@@ -1,0 +1,13 @@
+.input, .textarea {
+    min-height: 30px;
+    width: 100%;
+    background-color: var(--color-dark);
+    border: solid 1px var(--color-gray);
+    padding: 8px;
+    color: var(--color-light);
+}
+
+.textarea {
+    resize: none;
+    overflow: hidden;
+}
