@@ -1,4 +1,8 @@
 from pydantic_settings import BaseSettings, SettingsConfigDict
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
 
 class Settings(BaseSettings):
     DB_NAME: str
@@ -7,8 +11,8 @@ class Settings(BaseSettings):
     DB_HOST: str
     DB_PORT: int
 
-    INSTANCE_ID: str = "INSTANCE_ID"
-    TOKEN: str = "TOKEN"
+    INSTANCE_ID: str = os.getenv("INSTANCE_ID")
+    TOKEN: str = os.getenv("TOKEN")
     BASE_URL: str = "https://7105.api.greenapi.com"
 
     @property
