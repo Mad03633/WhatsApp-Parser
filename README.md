@@ -23,4 +23,11 @@ Green API credentials can be obtained by registering at [**green-api.com**](http
 | GET      | /api/chat_messages/{chat_id}| Retrieve message history       |
 | GET      | /api/contact_info/{user_id} | Detailed info about one contact|
 
+## Using Green API
 
+Green API allows direct WhatsApp Business data access through REST endpoints.
+I build URLs like this:
+
+    ```
+    url = f"https://7105.api.greenapi.com/waInstance{INSTANCE_ID}/{endpoint}/{TOKEN}"
+    ```
