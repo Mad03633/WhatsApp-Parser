@@ -15,12 +15,12 @@ Green API credentials can be obtained by registering at [**green-api.com**](http
 
 ## API Endpoints
 
-| Method    | Endpoint |
-| -------- | ------- |
-| GET  | /api/chats    |
-| GET | /api/summary     |
-| GET    | /api/chat_info/{chat_id}    |
-| GET    | /api/chat_messages/{chat_id}    |
-| GET    | /api/contact_info/{user_id}    |
+| Method   | Endpoint                    | Description                    |
+| -------- | ----------------------------| -------------------------------|
+| GET      | /api/chats                  | List group chats with analytics|
+| GET      | /api/summary                | Summary statistics for account |
+| GET      | /api/chat_info/{chat_id}    | Detailed info about one chat   |
+| GET      | /api/chat_messages/{chat_id}| Retrieve message history       |
+| GET      | /api/contact_info/{user_id} | Detailed info about one contact|
 
 
